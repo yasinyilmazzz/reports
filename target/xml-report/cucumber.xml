@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="41.167" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="google test" name="Ürün bilgisayar" time="21.637">
+<system-out><![CDATA[
+Given Ana sayfaya gidilir...................................................passed
+And Arama çubuğunda "HP Elitebook" yazılır..................................passed
+And Arama tuşuna basılır....................................................passed
+Then Sayfa başlığının "HP Elitebook" olduğu görülür.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="google test" name="Ürün telefon" time="9.485">
+<system-out><![CDATA[
+Given Ana sayfaya gidilir...................................................passed
+And Arama çubuğunda "iPhone" yazılır........................................passed
+And Arama tuşuna basılır....................................................passed
+Then Sayfa başlığının "iPhone" olduğu görülür...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="google test" name="Ürün negatif" time="9.388">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.GoogleStepDef.sayfa_başlığının_olduğu_görülür(GoogleStepDef.java:24)
+	at ✽.Sayfa başlığının "negatif" olduğu görülür.(file:///C:/Users/Casper/Desktop/raporlar/./src/test/resources/features/googleTest.feature:20)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Ana sayfaya gidilir...................................................passed
+And Arama çubuğunda "iPhone" yazılır........................................passed
+And Arama tuşuna basılır....................................................passed
+Then Sayfa başlığının "negatif" olduğu görülür..............................failed
+]]></system-out>
+</testcase>
+</testsuite>
